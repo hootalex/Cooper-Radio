@@ -99,8 +99,13 @@ h2 {
   flex-direction: row-reverse;;
 }
 
-.mainnav p:last-child {
-  background-color: gainsboro;
+.submit {
+  background-color: #FF6539;
+  padding: 10px;
+}
+
+.submit:hover {
+  background-color: #FF8B6D
 }
 #waveform {
   width: 100%;
