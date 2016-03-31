@@ -4,7 +4,6 @@ body{
 margin: 0;
 padding: 0;
 -webkit-font-smoothing: antialiased;
-background-color: gainsboro;
 }
 
 .mainnav {
@@ -105,7 +104,7 @@ h2 {
 }
 
 .submit:hover {
-  background-color: #FF8B6D
+  background-color: FF8B6D
 }
 #waveform {
   width: 100%;
@@ -113,11 +112,9 @@ h2 {
 }
 
 strong {
-  background-color: black;
-  padding: 10px;
-  color: white;
   font-style: normal;
   font-weight: normal;
+  font-family: 'Oswald';
 }
 
 .transmitting {
@@ -137,10 +134,11 @@ strong {
 
 .footer {
   font-family: Helvetica, Arial, sans-serif;
-  text-align: center;
   font-size: 10px;
   color: gray;
   padding: 20px;
+  padding-left: 80px;
+
 }
 
 @keyframes transmit {
@@ -168,4 +166,5 @@ strong {
 
   .footer {
     font-size: 9px;
+    padding-left: 40px;
   }
