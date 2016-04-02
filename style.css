@@ -20,9 +20,9 @@ padding: 0;
   padding: 40px;
 }
 
-.mainnav img:hover {
+/*.mainnav img:hover {
   opacity: .6;
-}
+}*/
 
 .mainnav a {
 color: black;
@@ -105,15 +105,6 @@ h2 {
 .submit {
   background-color: #FF6539;
   padding: 10px;
-}
-
-.notice {
-font-size: 14px;
-font-family: Lucida Console, monospace;
-position: absolute;
-background-color: white;
-color: black;
-z-index: 99;
 }
 
 @keyframes open {
