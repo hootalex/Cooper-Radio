@@ -107,6 +107,30 @@ h2 {
   padding: 10px;
 }
 
+.notice {
+font-size: 14px;
+font-family: Lucida Console, monospace;
+position: absolute;
+background-color: white;
+color: black;
+z-index: 99;
+}
+
+@keyframes open {
+    0% {border-top: dotted black 10px;
+    }
+    100% {border-top: dotted black 0px;
+    }
+}
+
+.show {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
 .submit:hover {
   background-color: #FF8B6D;
 }

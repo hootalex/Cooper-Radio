@@ -4,12 +4,9 @@ $(document).ready(function() {
     $("#transmit").toggleClass("transmitting");
   });
 
-  $("h2").click(function() {
+  $(".mainnav").click(function() {
 
-    $("div").toggleClass("hide");
-    $("h2").toggleClass("hide");
-    $("#explorer").toggleClass("hide flyin");
-    $("#folder").toggleClass("show");
+    $(".notice").append("Sorry! Most of this site doesn't work yet. Please send submissions to cooperpodcast@gmail.com Thank you! ");
   });
   $(".playbutton").click(function() {
 
