@@ -114,6 +114,12 @@ h2 {
   font-weight: normal;
   margin: 0;
 }
+
+.showtitle {
+  border-bottom: 1px solid black;
+  display: inline;
+}
+
 .audio {
   padding: 80px;
   padding-top: 0px;
