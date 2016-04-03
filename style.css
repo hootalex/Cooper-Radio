@@ -23,7 +23,7 @@ padding: 0;
 .mainnav img:nth-child(2) {
   width: 160px;
   height: 160px;
-  padding-right: 10px;
+  padding-right: 18px;
 }
 
 /*.mainnav img:hover {
@@ -34,7 +34,7 @@ padding: 0;
   display: inline;
   font-family: "Oswald";
   font-size: 20px;
-  line-height: 120px;
+  /*line-height: 120px;*/
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -44,11 +44,33 @@ a {
   text-decoration:none;
   padding: 10px;
   border: 1px solid black;
-  transition: .2s;
+  line-height: 120px;
 }
 a:hover {
   color: white;
   background-color: black;
+}
+
+span {
+  font-size: 10px;
+  padding-left: 0;
+  border-bottom: 1px solid black;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.podtitle {
+  animation-name: show;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+
+}
+
+@keyframes show {
+    0% {transform: translateY(-200px);
+    }
+    100% {transform: translateY(0);
+    }
 }
 
 h1 {
@@ -188,7 +210,7 @@ strong:hover {
     opacity: 0;}
 }
 
-@media all and (max-width:950px) {
+@media all and (max-width:1000px) {
 
   .audio {
     padding: 40px;
