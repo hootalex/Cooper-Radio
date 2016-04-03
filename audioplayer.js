@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         backend: 'MediaElement',
         hideScrollbar: 'true',
         cursorWidth: 1,
-        height: 100,
+        height: 200,
         normalize: true,
         // barWidth: 2,
     });

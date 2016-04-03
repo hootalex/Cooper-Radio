@@ -90,6 +90,7 @@ h1 {
   .player {
   display: flex;
   flex-direction: row-reverse;
+    padding-top: 40px;
 }
 
 .playbutton {
@@ -111,6 +112,7 @@ h2 {
   font-family: "Oswald";
   font-size: 50px;
   font-weight: normal;
+  margin: 0;
 }
 .audio {
   padding: 80px;
