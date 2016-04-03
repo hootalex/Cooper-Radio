@@ -168,6 +168,7 @@ p {
 
 .mobilecover img {
   width: 100%;
+    padding-bottom: 20px;
 }
 
 .mainnav button {
@@ -210,4 +211,12 @@ p {
   .mainnav button {
     display: inline;
     padding-bottom: 10px;
+  }
+
+.audio {
+    text-align: center;
+  }
+
+  #waveform {
+    padding-right: 0;
   }
