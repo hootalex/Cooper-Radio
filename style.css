@@ -148,9 +148,9 @@ p {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 10px;
   color: gray;
-  text-align: center;
+  display: block;
   padding: 10px;
-
+  text-align: center;
 }
 
 @keyframes transmit {
@@ -193,7 +193,6 @@ p {
 
   .footer {
     font-size: 9px;
-    padding-left: 40px;
   }
 
   .player img {
