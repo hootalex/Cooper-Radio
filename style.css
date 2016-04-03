@@ -89,6 +89,12 @@ h2 {
   display: inline;
 }
 
+.showdate {
+  display: inline;
+  padding: 4px;
+  color: gray;
+}
+
 .audio {
   padding: 80px;
   padding-top: 0px;
