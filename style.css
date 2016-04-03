@@ -10,10 +10,8 @@ padding: 0;
   width: 100%;
   display: flex;
   flex-flow: row;
-  background-color: white;
   border-top: 2px solid black;
 }
-
 .mainnav img:first-child {
   width: 110px;
   height: 71px;
@@ -203,9 +201,6 @@ p {
     display: block;
   }
 
-  .player button {
-    display: none;
-  }
 
   .mainnav button {
     display: inline;
