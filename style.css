@@ -148,8 +148,8 @@ p {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 10px;
   color: gray;
-  padding: 20px;
-  padding-left: 80px;
+  text-align: center;
+  padding: 10px;
 
 }
 
