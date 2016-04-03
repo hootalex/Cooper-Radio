@@ -160,6 +160,16 @@ p {
     opacity: 0;}
 }
 
+.mobilecover {
+  width: 90%;
+  margin: auto;
+  display: none;
+}
+
+.mobilecover img {
+  width: 100%;
+}
+
 @media all and (max-width:900px) {
 
   .audio {
@@ -179,4 +189,12 @@ p {
   .footer {
     font-size: 9px;
     padding-left: 40px;
+  }
+
+  .player img {
+    display: none;
+  }
+
+  .mobilecover {
+    display: block;
   }
