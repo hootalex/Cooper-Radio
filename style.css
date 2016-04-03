@@ -21,21 +21,10 @@ padding: 0;
   padding-bottom: 0;
 }
 
-.mainnav img:nth-child(2) {
-  width: 160px;
-  height: 160px;
-  padding-right: 18px;
-}
-
-/*.mainnav img:hover {
-  opacity: .6;
-}*/
 
 .mainnav p {
   display: inline;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  /*line-height: 120px;*/
+  line-height: 130px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -53,12 +42,6 @@ a:hover {
   background-color: black;
 }
 
-span {
-  font-size: 12px;
-  padding-left: 0;
-  line-height: 25px;
-}
-
 .player img {
   width: 200px;
   height: 200px;
@@ -69,18 +52,6 @@ span {
     }
     100% {transform: translateY(0);
     }
-}
-
-h1 {
-  font-family: "Oswald";
-  font-size: 30px;
-}
-
-.aud {
-  width: 200px;
-  height: 200px;
-  background-color: gainsboro;
-  display: flex;
 }
 
 #waveform {
@@ -128,7 +99,7 @@ h2 {
 }
 
 
-.audio p {
+p {
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -150,39 +121,12 @@ h2 {
     }
 }
 
-.show {
-  display: inline;
-}
-
-.hide {
-  display: none;
-}
-
 .submit:hover {
   background-color: #FF8B6D;
 }
 #waveform {
   width: 100%;
   padding-right: 20px;
-}
-
-strong {
-  font-style: normal;
-  padding: 10px;
-  border: solid black 1px;
-  font-size: 20px;
-  font-weight: normal;
-  font-family: 'Oswald';
-}
-strong:hover {
-  font-style: normal;
-  padding: 10px;
-  border: solid black 1px;
-  font-size: 20px;
-  font-weight: normal;
-  font-family: 'Oswald';
-  color: white;
-  background-color: black;
 }
 
 .transmitting {
@@ -216,7 +160,7 @@ strong:hover {
     opacity: 0;}
 }
 
-@media all and (max-width:1000px) {
+@media all and (max-width:900px) {
 
   .audio {
     padding: 40px;
