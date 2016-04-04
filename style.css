@@ -242,7 +242,8 @@ p {
   }
 
   #waveform {
-    padding-right: 0;
+    padding: 0px;
+    width: 100%;
   }
 
   .mainnav {
@@ -255,4 +256,8 @@ p {
 
   .mainnavbottom {
     display: flex;
+  }
+
+  .audio {
+    width: 90%;
   }
