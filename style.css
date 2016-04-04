@@ -198,7 +198,7 @@ p {
   display: none;
 }
 
-@media all and (max-width:900px) {
+@media all and (max-width:600px) {
 
   .audio {
     padding: 40px;
