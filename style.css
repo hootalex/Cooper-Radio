@@ -12,6 +12,24 @@ padding: 0;
   flex-flow: row;
   border-top: 2px solid white;
 }
+.mainnavbottom {
+  width: 100%;
+  flex-flow: row;
+  border-top: 2px solid white;
+  display: none;
+}
+.mainnavbottom img:first-child {
+  width: 110px;
+  height: 71px;
+  padding: 40px;
+  padding-bottom: 0;
+}
+.mainnavbottom p {
+  display: inline;
+  line-height: 130px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
 .mainnav img:first-child {
   width: 110px;
   height: 71px;
@@ -208,7 +226,6 @@ p {
     display: block;
   }
 
-
   .mainnav button {
     display: inline;
     padding-bottom: 10px;
@@ -228,4 +245,8 @@ p {
 
   h2 {
     font-size: 30px;
+  }
+
+  .mainnavbottom {
+    display: flex;
   }
