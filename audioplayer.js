@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         hideScrollbar: 'true',
         cursorWidth: 1,
         height: 200,
-        normalize: false,
+        normalize: true,
         // barWidth: 2,
     });
 
