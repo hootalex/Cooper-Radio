@@ -112,10 +112,13 @@ h2 {
 }
 
 .audio {
-  padding: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
   padding-top: 0px;
   padding-bottom: 50px;
   border-bottom: 1px solid gray;
+  width: 80%;
+  margin: auto;
 }
 
 
@@ -145,8 +148,13 @@ p {
   background-color: #FF8B6D;
 }
 #waveform {
-  width: 100%;
-  padding-right: 20px;
+  width: 85%;
+  padding-right: 5%;
+}
+
+.player img {
+  width: 200px;
+  height: 200px;
 }
 
 .transmitting {
