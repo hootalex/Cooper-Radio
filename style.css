@@ -59,15 +59,13 @@ a:hover {
 }
 
 .artwork {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 250px;
+  height: 250px;
+  z-index: -1;
 }
-
-/*.artwork {
-  width: 200px;
-  height: 200px;
-}*/
 
 #waveform {
   width: 100%;
