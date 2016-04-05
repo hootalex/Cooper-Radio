@@ -58,24 +58,19 @@ a:hover {
   background-color: black;
 }
 
-.player img {
-  width: 200px;
-  height: 200px;
-}
-
 .artwork {
   width: 200px;
   height: 200px;
+  object-fit: contain;
 }
+
+/*.artwork {
+  width: 200px;
+  height: 200px;
+}*/
 
 #waveform {
   width: 100%;
-}
-
-  .player {
-  display: flex;
-  flex-direction: row-reverse;
-    padding-top: 40px;
 }
 
 .playbutton {
@@ -133,7 +128,8 @@ p {
 
 .player {
   display: flex;
-  flex-direction: row-reverse;;
+  flex-direction: row;
+  padding-top: 40px;
 }
 
 .submit {
@@ -154,10 +150,6 @@ p {
 #waveform {
 }
 
-.player img {
-  width: 200px;
-  height: 200px;
-}
 
 .transmitting {
   height: 20px;
