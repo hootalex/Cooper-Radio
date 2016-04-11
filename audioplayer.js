@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // Load audio from URL
-    wavesurfer.load('audio/DougStory.mp3');
+    wavesurfer.load('audio/CooperQuest2.mp3');
 
 
     // Play button
