@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -14,6 +12,14 @@
     <title>Cooper Radio</title>
   </head>
   <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <div class="mainnav">
       <img src="img/CooperRadio.png" alt="Cooper Radio logo"/>
       <p><a href="#">Shows</a></p>
@@ -36,5 +42,6 @@
           <br>
           <p>India Armstrong visits a psychic, Isaiah Davis gets a summer job (Part 1/?), and Ishraki Kazi talks about his elevator performance from last year. Produced and hosted by Alex Tomlinson.</p>
         </div>
+        <div class="fb-like" data-href="http://cooperrad.io" data-layout="standard" data-action="recommend" data-show-faces="false" data-share="false"></div>
       <div id="transmit"></div>
 </html>
