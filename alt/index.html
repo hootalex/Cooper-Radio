@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="../font-awesome.css" rel="stylesheet">
+    <script src="../jquery-2.2.0.min.js"></script>
+    <script src="../wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.0.57/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.3.5/tabletop.min.js"></script>
+		<script src="https://cdn.rawgit.com/CooperUnion/javascript-learning/master/tabletop-simple.js"></script>
+    <script>
+			$(document).ready(function(){
+					//configure spreadsheet
+				var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1XlT-aTJNFqw0QMoKhsVCaXzWU-bSHTfBApnYVkercUQ/pubhtml';
+				getSpreadsheetJSON(public_spreadsheet_url, function(response){
+					console.log(response);
+					var content = response[0].content;
+
+          var audiourl = response[0].soundurl;
+
+						$("h1").append(response[0].title).css({
+						});
+            $(".showdate").append(response[0].timestamp).css({
+						});
+            $(".desc").append(response[0].description).css({
+						});
+            $("#arturl").prepend('<img class="artwork" src="'+response[0].arturl+'" alt="album art"/>').css({
+            });
+
+            var wavesurfer = Object.create(WaveSurfer);
+
+            // Init
+            wavesurfer.init({
+                container: document.querySelector('#waveform'),
+                waveColor: 'white',
+                progressColor: 'gray',
+                backend: 'MediaElement',
+                hideScrollbar: 'true',
+                cursorWidth: 1,
+                height: 200,
+                normalize: true,
+                // barWidth: 2,
+            });
+            // Load audio from URL
+            wavesurfer.load(audiourl);
+
+
+            // Play button
+            var button = document.querySelector('[data-action="play"]');
+
+            button.addEventListener('click', wavesurfer.playPause.bind(wavesurfer));
+
+				});
+			});
+</script>
+    <script src="../littlethings.js"></script>
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+
+    <title>Cooper Radio</title>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="mainnav">
+      <img src="../img/CooperRadioInvert.png" alt="Cooper Radio logo"/>
+      <p><a href="#">Shows</a></p>
+      <p><a href="http://soundcloud.com/cooperradio" target="_blank">Archive</a></p>
+      <p><a href="https://www.dropbox.com/request/yBghDFeEMY8iNVGPpbgu" target="_blank">Submit</a></p>
+  </div>
+      <div class="audio">
+        <p class="showtitle">Station 1</p>
+        <p class="showdate"></p>
+        <br>
+        <button class="playbutton" data-action="play">
+          <i id="playandpause" class="fa fa-play fa"></i>
+        </button>
+        <i id="arturl"></i>
+        <h1></h1>
+          <div class="player">
+            <div id="waveform"></div>
+            <br>
+          </div>
+          <br>
+          <p class="desc"></p>
+          <br>
+<div class="fb-like" data-href="https://facebook.com/cooperradio" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+        </div>
+      <div id="transmit"></div>
+</html>
