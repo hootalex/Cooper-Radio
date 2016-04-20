@@ -226,3 +226,23 @@ p {
 .mainnav button {
   display: none;
 }
+
+.mobilemessage {
+  display: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  text-align: center;
+  background: black;
+  color: white;
+  font-family: 'Oswald';
+  font-size: 50px;
+  z-index: 99;
+  height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .mobilemessage {
+    display: block;
+  }
+}
