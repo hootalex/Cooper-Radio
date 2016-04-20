@@ -229,6 +229,7 @@ p {
 
 .mobilemessage {
   display: none;
+  width: 100vw;
   position: absolute;
   margin: auto;
   top: 0;
