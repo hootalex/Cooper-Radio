@@ -238,7 +238,6 @@ p {
   font-family: 'Oswald';
   font-size: 50px;
   z-index: 99;
-  height: 100vh;
 }
 
 @media (max-width: 600px) {
