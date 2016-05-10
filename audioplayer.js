@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     wavesurfer.init({
         container: document.querySelector('#waveform'),
         waveColor: 'black',
-        progressColor: 'gray',
+        progressColor: '#0070CE',
         backend: 'MediaElement',
         hideScrollbar: 'true',
         cursorWidth: 1,
