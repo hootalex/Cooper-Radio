@@ -3,10 +3,9 @@
 <title>Cooper Radio</title>
 <style>
 @import 'https://fonts.googleapis.com/css?family=Poppins:700';
-@import 'https://fonts.googleapis.com/css?family=Oswald:300';
-@import 'https://fonts.googleapis.com/css?family=Ultra';
+@import 'https://fonts.googleapis.com/css?family=Oswald';
 html {
-background-color: lightblue;
+background-color: yellowgreen;
 font-family: 'Poppins';
 color: black;
 font-weight: 700;
@@ -30,20 +29,19 @@ hr {
 }
 
 ol {
+  position: relative;
+  z-index: 99;
   text-align: left;
   list-style-type: decimal-leading-zero;
 }
 
 li {
+  font-family: 'Oswald', Arial, sans-serif;
+  font-weight: normal;
   color: black;
-  border-bottom: 2px solid black;
-  height: 10vh;
+  border-bottom: 1px solid black;
+  padding: 1vw;
 }
-
-li:hover {
-  color: white;
-}
-
 
 ol i {
   font-family: Helvetica, Arial, sans-serif;
@@ -54,10 +52,8 @@ ol i {
   width: 30vw;
 }
 
-span {
-  font-family: Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-size: 1vw;
+li:hover {
+  color: white;
 }
 
 a {
@@ -65,15 +61,24 @@ a {
   text-decoration: none;
 }
 
+.ghost {
+  color: transparent;
+  transition: 10s;
+}
+
+.ghost:hover {
+  color: white;
+}
+
 
 </style>
 <body>
   <img src="http://cooperrad.io/img/CooperRadio.png" width="80px"></img>
-  <h1>New!</h1>
+  <h1>Cooper<br><span class="ghost">Radio<span></h1>
   <ol>
-    <a href="http://petercooperblockparty.com/2016/"><li>Upcoming<i>We're coming out to the Peter Cooper Block Party!</i></li></a>
+    <a href="http://petercooperblockparty.com/2016/"><li>Block Party<i>We're coming out to the Peter Cooper Block Party!</i></li></a>
     <li>Test<i>Test test test test test test test test test test test test test test tes test ummmmmmm mmmm</i></li>
   </ol>
-  <span>We're now an actual podcast! Go to your app. Recordings are archived on Soundcloud and are downloadable here.</span>
+  We're now an actual podcast! Go to your app. Recordings are archived on Soundcloud and are downloadable here.
 </body>
 </html>
