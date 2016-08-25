@@ -26,7 +26,7 @@ h2 {
 
 h1 {
   font-family: 'Oswald';
-  padding-left: 10px;
+  padding-left: 15px;
   font-size: 25;
   font-weight: normal;
   display: inline-block;
@@ -84,6 +84,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
 .ghost {
   color: transparent;
   transition: 10s;
@@ -97,19 +101,26 @@ img {
   text-align: center;
 }
 
+.submit {
+  font-family: 'Oswald';
+  display: inline-block;
+  padding: 20px;
+  float: right;
+  background-color: none;
+  border: 2px solid orangered;
+}
+
+.submit:hover {
+  background-image: url(http://49.media.tumblr.com/a0ac787cab2d7b202dda5111395eb79e/tumblr_n18md6FIZU1r1fy4bo1_500.gif);
+  color: white;
+}
+
 
 </style>
 <body>
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
   <img src="img/CooperRadio.png" width="80px"></img>
-  <h1>Now an actual podcast!</h1>
+  <h1>Cooper Radio</h1>
+  <a href="http://cooperrad.io/submit"><div class="submit">Submit</div></a>
   <h2>2016-2017</h2>
   <ol>
     <a href="http://petercooperblockparty.com/2016/"><li><span>TBA</span>TKTK<i>Soon</i></li></a>
