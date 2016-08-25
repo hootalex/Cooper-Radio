@@ -1,46 +1,79 @@
 <!DOCTYPE html>
-  <head>
-    <meta content="width=1000" name="viewport">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="font-awesome.css" rel="stylesheet">
-    <script src="jquery-2.2.0.min.js"></script>
-    <script src="wavesurfer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.0.57/plugin/wavesurfer.timeline.min.js"></script>
-    <script src="audioplayer.js"></script>
-    <script src="littlethings.js"></script>
-    <link href="apple-touch-icon.png" rel="apple-touch-icon">
-    <title>Cooper Radio</title>
-  </head>
-  <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="mainnav">
-      <img src="img/CooperRadio.png" alt="Cooper Radio logo"/>
-  </div>
-      <div class="audio">
-        <p class="showtitle">#4</p>
-        <p class="showdate">May 10, 2016</p>
-        <br>
-        <button class="playbutton" data-action="play">
-          <i id="playandpause" class="fa fa-play fa"></i>
-        </button>
-        <img class="artwork" src="img/albmart.png" alt="album art"/>
-        <h1>End of the Year Show 2016</h1>
-          <div class="player">
-            <div id="waveform"></div>
-            <br>
-          </div>
-          <br>
-          <p>Cooper Radio posters get critiqued on Cooper Radio by Typography Professor Alexander Tochilovsky. Sound Profesor Zach Poff offers his opinion on the show so far. Featuring an audio snippet from Cooper's not-so-distant past and a new song by Secretary Desk. Hosted and produced by Alex Tomlinson with help from guest Kelsey Mitchell.</p>
-          <br>
-<div class="fb-like" data-href="https://facebook.com/cooperradio" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
-        </div>
-      <div id="transmit"></div>
-      <a href="https://itunes.apple.com/us/podcast/cooper-radio/id1131947568?mt=2"><div class="mobilemessage">Tap here to open our Podcast!</div></a>
+<html>
+<title>Alex Tomlinson - Table of Contents</title>
+<style>
+@import 'https://fonts.googleapis.com/css?family=Poppins:700';
+@import 'https://fonts.googleapis.com/css?family=Oswald:300';
+@import 'https://fonts.googleapis.com/css?family=Ultra';
+html {
+background-color: lightblue;
+font-family: 'Poppins';
+color: black;
+font-weight: 700;
+font-size: 3.5vw;
+font-smooth: never;
+-webkit-font-smoothing: antialiased;
+margin: 5vw;
+overflow-x: hidden;
+}
+
+h1 {
+  font-size: 25vw;
+  font-weight: normal;
+  line-height: 0em;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+
+ol {
+  text-align: left;
+  list-style-type: decimal-leading-zero;
+}
+
+li {
+  color: black;
+  border-bottom: 2px solid black;
+  height: 10vh;
+}
+
+li:hover {
+  color: white;
+}
+
+
+ol i {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  float: right;
+  font-size: 1vw;
+  padding-top: 1.5vw;
+  width: 30vw;
+}
+
+span {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 1vw;
+}
+
+a {
+  color: none;
+  text-decoration: none;
+}
+
+
+</style>
+<body>
+  <img src="http://cooperrad.io/img/CooperRadio.png" width="80px"></img>
+  <h1>New!</h1>
+  <ol>
+    <a href="http://petercooperblockparty.com/2016/"><li>Upcoming<i>We're coming out to the Peter Cooper Block Party!</i></li></a>
+    <li>Test<i>Test test test test test test test test test test test test test test tes test ummmmmmm mmmm</i></li>
+  </ol>
+  <span>We're now an actual podcast! Go to your app. Recordings are archived on Soundcloud and are downloadable here.</span>
+</body>
 </html>

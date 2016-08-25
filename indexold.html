@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <head>
+    <meta content="width=1000" name="viewport">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="font-awesome.css" rel="stylesheet">
+    <script src="jquery-2.2.0.min.js"></script>
+    <script src="wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.0.57/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="audioplayer.js"></script>
+    <script src="littlethings.js"></script>
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <title>Cooper Radio</title>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="mainnav">
+      <img src="img/CooperRadio.png" alt="Cooper Radio logo"/>
+  </div>
+      <div class="audio">
+        <p class="showtitle">#4</p>
+        <p class="showdate">May 10, 2016</p>
+        <br>
+        <button class="playbutton" data-action="play">
+          <i id="playandpause" class="fa fa-play fa"></i>
+        </button>
+        <img class="artwork" src="img/albmart.png" alt="album art"/>
+        <h1>End of the Year Show 2016</h1>
+          <div class="player">
+            <div id="waveform"></div>
+            <br>
+          </div>
+          <br>
+          <p>Cooper Radio posters get critiqued on Cooper Radio by Typography Professor Alexander Tochilovsky. Sound Profesor Zach Poff offers his opinion on the show so far. Featuring an audio snippet from Cooper's not-so-distant past and a new song by Secretary Desk. Hosted and produced by Alex Tomlinson with help from guest Kelsey Mitchell.</p>
+          <br>
+<div class="fb-like" data-href="https://facebook.com/cooperradio" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+        </div>
+      <div id="transmit"></div>
+      <a href="https://itunes.apple.com/us/podcast/cooper-radio/id1131947568?mt=2"><div class="mobilemessage">Tap here to open our Podcast!</div></a>
+</html>
