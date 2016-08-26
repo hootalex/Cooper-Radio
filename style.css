@@ -24,7 +24,7 @@ h2 {
 }
 
 ol {
-  padding-bottom: 10px;
+  border-bottom: 20px solid transparent;
 }
 
 .new {
