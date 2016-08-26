@@ -1,268 +1,101 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700);
-
-body{
-margin: 0;
-padding: 0;
+@import 'https://fonts.googleapis.com/css?family=Oswald:400';
+@import 'https://fonts.googleapis.com/css?family=Trocchi';
+html {
+-webkit-text-size-adjust: none;
+font-smooth: never;
 -webkit-font-smoothing: antialiased;
-}
-<<<<<<< HEAD
-
-::-moz-selection { color: white; background: #0070CE; }
-::selection { color: white; background: #0070CE; }
-
-=======
-::-moz-selection { color: white; background: #0070CE; }
-::selection { color: white; background: #0070CE; }
->>>>>>> origin/gh-pages
-.fullscreenone {
-  height: 100vh;
-  width: 100vw;
-  max-width:100%;
-  margin: auto;
-  overflow: auto;
-  display:table-cell;
-  vertical-align:middle;
-}
-.mainnav {
-  width: 100%;
-  border-top: 2px solid white;
-  padding-bottom: 25px;
-}
-.mainnavbottom {
-  width: 100%;
-  flex-flow: row;
-  border-top: 2px solid white;
-  display: none;
-}
-.mainnavbottom img:first-child {
-  width: 110px;
-  height: 71px;
-  padding: 40px;
-  padding-bottom: 0;
-}
-.mainnavbottom p {
-  display: inline;
-  line-height: 130px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.mainnav img:first-child {
-  width: 110px;
-  height: 71px;
-  padding: 40px;
-  padding-bottom: 0;
+margin: 50px;
 }
 
-
-.mainnav p {
-  display: inline;
-  line-height: 130px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-a {
-  color: black;
-  text-decoration:none;
-  padding: 10px;
-  /*border: 1px solid black;*/
-  line-height: 140px;
-  font-family: 'Oswald';
-}
-a:hover {
-  border-bottom: 2px solid gray;
-}
-
-.artwork {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  width: 250px;
-  height: 250px;
-  z-index: -1;
-  display: none;
-}
-
-#waveform {
-  width: 100%;
-  animation-name: load;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-
-}
-
-@keyframes load {
-    0% { opacity:1;
-    }
-    50% { opacity:0;
-    }
-    100% { opacity:1;
-    }
-}
-
-
-.playbutton {
-  border: none;
-  background-color: transparent;
-  width: 50px;
-  padding: 0;
-  outline: none;
-  color: black;
-  font-size: 30px;
-  cursor: pointer;
-  display: inline-block;
-  text-align: left;
-
-}
-
-.playbutton:hover {
-  color: gray;
+h2 {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 h1 {
-  color: black;
-  font-family: "Oswald";
-  font-size: 50px;
+  font-family: 'Oswald';
+  margin-left: 15px;
+  font-size: 25;
   font-weight: normal;
-  margin: 0;
-  display: inline;
+  display: inline-block;
 }
 
-.showtitle {
-  border-bottom: 1px solid black;
-  display: inline;
-}
-
-.showdate {
-  display: inline;
-  padding: 4px;
-  color: gray;
-}
-
-.audio {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  width: 80%;
+ol {
   margin: auto;
-
+  position: relative;
+  text-align: left;
+  list-style-type: decimal-leading-zero;
 }
 
-.show {
-  padding-top: 0px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid gray;
-  width: 300px;
-  margin: auto;
-  line-height: 2;
+li {
+  font-family: 'Trocchi';
+  font-weight: normal;
+  font-size: 30px;
+  color: black;
+  border-bottom: 1px solid orangered;
+  padding: 10px;
 }
 
-
-p {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  line-height: 2;
-  width: 450px;
+ol i {
+  display: block;
+  font-family: Georgia, serif;
+  font-style: normal;
+  font-size: 14px;
+  width: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
+ol span {
+  float: right;
+  font-family: Georgia, serif;
+  font-style: normal;
+  font-size: 14px;
+  padding: 10px;
+  text-align: right;
+}
 
-.player {
-  display: flex;
-  flex-direction: row;
-  padding-top: 40px;
+li:hover {
+  color: orangered;
+}
+
+a {
+  color: none;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 .submit {
-  background-color: #FF6539;
-  padding: 10px;
-}
-
-@keyframes open {
-    0% {border-top: dotted black 10px;
-    }
-    100% {border-top: dotted black 0px;
-    }
+  font-family: 'Oswald';
+  position: relative;
+  padding: 20px;
+  float: right;
+  color: black;
+  background-color: none;
+  border: 2px solid royalblue;
+  z-index: 999;
 }
 
 .submit:hover {
-  background-color: #FF8B6D;
-}
-#waveform {
-}
-
-
-.transmitting {
-  height: 20px;
-  width: 20px;
-  border-radius: 50px;
-  border: 2px dotted black;
-  position: absolute;
-  top: 32px;
-  left: 134px;
-  animation-name: transmit;
-  animation-duration: .5s;
-  animation-timing-function: ease;
-  animation-iteration-count: 1;
-  opacity: 0;
-}
-
-.footer {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 10px;
-  color: gray;
-  display: block;
-  padding: 10px;
-  text-align: center;
-}
-
-@keyframes transmit {
-    0% {transform: scale(0);
-    opacity: 1;}
-    100% {transform: scale(1.5);
-    opacity: 0;}
-}
-@keyframes message {
-    0% {
-    opacity: 0;}
-    100% {
-    opacity: 1;}
-}
-
-.mobilecover {
-  width: 90%;
-  margin: auto;
-  display: none;
-}
-
-.mobilecover img {
-  width: 100%;
-    padding-bottom: 20px;
-    padding-top: 30px;
-}
-
-.mainnav button {
-  display: none;
-}
-
-.mobilemessage {
-  display: none;
-  width: 100vw;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  text-align: center;
-  background: purple;
+  background-color: royalblue;
   color: white;
-  font-family: 'Oswald';
-  font-size: 30px;
-  z-index: 99;
 }
 
-@media (max-width: 1000px) {
-  .mobilemessage {
-    display: block;
-    animation-name: message;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+
+@media all and (max-width:500px) {
+  ol i {
+    width: 100%;
+  }
+  .submit {
+    display: none;
+  }
+  img {
+    width: 50px;
   }
 }
