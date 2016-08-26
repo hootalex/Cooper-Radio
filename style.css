@@ -16,17 +16,15 @@ h2 {
   padding: 10px;
   width: 70px;
   height: 70px;
-  background-color: orangered;
-  color: white;
+  background-color: yellow;
   border-radius: 50%;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  transform-origin: left;
 }
 
 .new {
-  background-color: black;
+  background-color: lightgreen;
 }
 
 h1 {
@@ -51,7 +49,7 @@ li {
   font-weight: normal;
   font-size: 30px;
   color: black;
-  border-bottom: 1px solid orangered;
+  border-bottom: 1px solid lightblue;
   padding: 10px;
 }
 
@@ -92,14 +90,14 @@ a:visited {
   position: relative;
   padding: 20px;
   float: right;
-  color: black;
-  background-color: none;
-  border: 2px solid royalblue;
+  color: white;
+  background-color: royalblue;
+  border-bottom: 1px solid black;
   z-index: 999;
 }
 
 .submit:hover {
-  background-color: royalblue;
+  background-color: black;
   color: white;
 }
 
@@ -116,6 +114,6 @@ a:visited {
   }
 
   ol {
-    width: none;
+    width: 100%;
   }
 }
