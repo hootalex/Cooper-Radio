@@ -23,6 +23,10 @@ h2 {
   vertical-align: middle;
 }
 
+ol {
+  padding-bottom: 10px;
+}
+
 .new {
   background-color: lightgreen;
 }
