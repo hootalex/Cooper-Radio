@@ -103,6 +103,10 @@ a:visited {
 
 
 @media all and (max-width:500px) {
+
+  html {
+    margin: 10px;
+  }
   ol i {
     width: 100%;
   }
@@ -115,5 +119,6 @@ a:visited {
 
   ol {
     width: 100%;
+    list-style-type: none;
   }
 }
