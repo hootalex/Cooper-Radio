@@ -16,7 +16,7 @@ h2 {
   padding: 10px;
   width: 70px;
   height: 70px;
-  background-color: yellow;
+  background-color: lightblue;
   border-radius: 50%;
   display: table-cell;
   text-align: center;
@@ -28,7 +28,7 @@ ol {
 }
 
 .new {
-  background-color: lightgreen;
+  background-color: yellow;
 }
 
 h1 {
