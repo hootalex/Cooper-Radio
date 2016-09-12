@@ -1,5 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Oswald:400';
 @import 'https://fonts.googleapis.com/css?family=Trocchi';
+@import 'https://fonts.googleapis.com/css?family=Heebo:700';
+
 html {
 -webkit-text-size-adjust: none;
 font-smooth: never;
@@ -8,7 +10,7 @@ margin: 50px;
 }
 
 h2 {
-  font-family: Georgia, serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   margin: auto;
@@ -16,25 +18,27 @@ h2 {
   padding: 10px;
   width: 70px;
   height: 70px;
-  background-color: lightblue;
+  background-color: royalblue;
+  color: white;
   border-radius: 50%;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
-
 ol {
   border-bottom: 20px solid transparent;
 }
 
 .new {
+  transform: rotate(-15deg);
   background-color: yellow;
+  color: black;
 }
 
 h1 {
   font-family: 'Oswald';
   margin-left: 15px;
-  font-size: 25;
+  font-size: 700;
   font-weight: normal;
   display: inline-block;
 }
@@ -49,19 +53,20 @@ ol {
 }
 
 li {
-  font-family: 'Trocchi';
+  font-family: 'Heebo';
   font-weight: normal;
   font-size: 20px;
   color: black;
-  border-bottom: 1px solid lightblue;
+  border-bottom: 1px solid gainsboro;
   padding: 10px;
 }
 
 ol i {
   display: block;
-  font-family: Georgia, serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-style: normal;
   font-size: 14px;
+  line-height: 20px;
   width: 350px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -69,15 +74,16 @@ ol i {
 
 ol span {
   float: right;
-  font-family: Georgia, serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-style: normal;
   font-size: 14px;
-  padding: 10px;
+  padding: 7px;
   text-align: right;
 }
 
-li:hover {
-  color: orangered;
+li:hover:before {
+  content: '\25B6';
+  color: #FFD801;
 }
 
 a {
@@ -94,9 +100,8 @@ a:visited {
   position: relative;
   padding: 20px;
   float: right;
-  color: white;
-  background-color: royalblue;
-  border-bottom: 1px solid black;
+  color: black;
+  border: 1px solid black;
   z-index: 999;
 }
 
