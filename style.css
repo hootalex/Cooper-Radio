@@ -102,6 +102,7 @@ a:visited {
   color: black;
   border: 1px solid black;
   z-index: 999;
+  margin-left: 5px;
 }
 
 .submit:hover {
@@ -128,5 +129,8 @@ a:visited {
   ol {
     width: 100%;
     list-style-type: none;
+  }
+  li img {
+    width: 100%;
   }
 }
