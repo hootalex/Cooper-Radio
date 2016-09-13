@@ -30,7 +30,6 @@ ol {
 }
 
 .new {
-  transform: rotate(-15deg);
   background-color: yellow;
   color: black;
 }
